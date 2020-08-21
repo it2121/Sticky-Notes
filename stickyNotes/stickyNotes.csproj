@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Blazor.ContextMenu.1.6.0\build\Blazor.ContextMenu.props" Condition="Exists('..\packages\Blazor.ContextMenu.1.6.0\build\Blazor.ContextMenu.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AC6D0B0-21E5-44C2-B4A5-EAE70586F8FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>stickyNotes</RootNamespace>
+    <AssemblyName>stickyNotes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\manga and stuff\Guna.UI-Framework-Lib-master\Guna.UI2.WinForms_v2.0.0.6\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Json.Net, Version=1.0.23.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.Net.1.0.23\lib\netstandard2.0\Json.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisioForge.Controls, Version=12.0.56.0, Culture=neutral, PublicKeyToken=5873e863f1bcda5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Controls.UI, Version=12.0.56.0, Culture=neutral, PublicKeyToken=eafa6bd21aa991fd, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Controls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Controls.UI.Dialogs, Version=12.0.56.0, Culture=neutral, PublicKeyToken=3d84672df68c33ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Controls.UI.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.MediaFramework, Version=12.0.56.0, Culture=neutral, PublicKeyToken=14e66dd726c53f11, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.MediaFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Shared, Version=12.0.56.0, Culture=neutral, PublicKeyToken=4cb7f6778cad43a2, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Tools, Version=12.0.56.0, Culture=neutral, PublicKeyToken=33c6ded9724deec2, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Types, Version=12.0.56.0, Culture=neutral, PublicKeyToken=722de1c1c0a7f49e, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.56\lib\net45\VisioForge.Types.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutForm.Designer.cs">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmClock.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Note.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutForm.resx">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Content\ui-contextmenu.less" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\ui-contextmenu.css" />
+    <Content Include="Content\ui-contextmenu.min.css" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\starIcon.png" />
+    <None Include="Resources\st.png" />
+    <None Include="Resources\stst.png" />
+    <None Include="Resources\ststst.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\sound.wav" />
+    <Content Include="icon.ico" />
+    <Content Include="IconSoundControl.ico" />
+    <Content Include="IconSoundControl.png" />
+    <Content Include="Notes.txt" />
+    <None Include="Resources\icon.ico" />
+    <None Include="Resources\SNIconImage.png" />
+    <None Include="Resources\1024px-Octicons-mark-github.svg.png" />
+    <None Include="Resources\git.png" />
+    <None Include="Resources\in.png" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\knockout-2.3.0.debug.js" />
+    <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require.js" />
+    <Content Include="Scripts\spa\changeTracker.js" />
+    <Content Include="Scripts\spa\commands.js" />
+    <Content Include="Scripts\spa\knockout.js" />
+    <Content Include="Scripts\spa\main.js" />
+    <Content Include="Scripts\spa\messenger.js" />
+    <Content Include="Scripts\spa\moment.js" />
+    <Content Include="Scripts\spa\observable.js" />
+    <Content Include="Scripts\spa\operation.js" />
+    <Content Include="Scripts\spa\store.js" />
+    <Content Include="Scripts\spa\timers.js" />
+    <Content Include="Scripts\spa\ui.js" />
+    <Content Include="Scripts\spa\ui\contextmenu.js" />
+    <Content Include="Scripts\spa\ui\templateEngine.js" />
+    <Content Include="Scripts\spa\underscore.js" />
+    <Content Include="Scripts\spa\utils.js" />
+    <Content Include="Scripts\text.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Blazor.ContextMenu.1.6.0\build\Blazor.ContextMenu.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Blazor.ContextMenu.1.6.0\build\Blazor.ContextMenu.props'))" />
+  </Target>
+</Project>
