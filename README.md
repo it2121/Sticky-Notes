@@ -19,12 +19,12 @@ Desktop notes application
 
 
 </br>
-## <img src="1.png"></img>
-## <img src="s1.gif"></img>
-## <img src="s2.gif"></img>
-## <img src="2.png"></img>
-## <img src="3.png"></img>
-## <img src="4.png"></img>
+ <img src="1.png"></img>
+ <img src="s1.gif"></img>
+ <img src="s2.gif"></img>
+ <img src="2.png"></img>
+ <img src="3.png"></img>
+ <img src="4.png"></img>
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/it2121/
