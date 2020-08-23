@@ -20,10 +20,13 @@ Desktop notes application
 
 </br>
  <img src="1.png"></img>
+ </br>
  <img src="s2.gif"></img>
-
+</br>
  <img src="2.png"></img>
+ </br>
  <img src="3.png"></img>
+ </br>
  <img src="4.png"></img>
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
