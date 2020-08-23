@@ -21,7 +21,7 @@ Desktop notes application
 </br>
  <img src="1.png"></img>
  <img src="s1.gif"></img>
- <img src="s2.gif"></img>
+
  <img src="2.png"></img>
  <img src="3.png"></img>
  <img src="4.png"></img>
